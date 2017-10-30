@@ -1,12 +1,12 @@
 # 2nd-keyboard
 
-Fork of [TaranVH](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS)'s original LuaMacros code, since I don't want to use Intercept.
+Adaptation of [TaranVH](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS)'s original LuaMacros code, since I don't want to use Intercept.
 
-A lot of the code is reorganized and genericized, but <i>should</i> work the same as his.
+A lot of the code is reorganized and genericized, but *should* work the same as his.
 
 NOTE: CURRENTLY UNTESTED, will do that soon ish
 
-Additional note: there are two .AHK script files in the "Scripts" folder. Only one is needed. Feel free to work off of "2nd-keyboard-commands-blank.ahk".
+Additional note: there are *two* .AHK script files in the "Scripts" folder. *Only one is needed*. Feel free to work off of `2nd-keyboard-commands-blank.ahk` and ignore `2nd-keyboard-commands-custom.ahk`.
 
 A quickstart guide for using a second keyboard purely for macros on Windows.
 
