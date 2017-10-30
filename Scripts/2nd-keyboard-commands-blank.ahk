@@ -27,7 +27,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 
 ~F24::
 FileRead, key, ; --> C:\PATH\TO\keypressed.txt <-- EDIT THIS PATH TO WHERE keypressed.txt IS LOCATED
-tippy(key) ; this function will just launch a quick tooltip that shows you what key you pressed. OPTIONAL.
+tippy(key) ; this function will just launch a quick tooltip that shows you what key you pressed. Optional, included for debugging.
 
 ; Alphanumeric Keys
 
@@ -83,6 +83,7 @@ else if (key = "y")
 preset("ahk_y_macro")
 else if (key = "z")
 preset("ahk_z_macro")
+
 else if (key = "0")
 preset("ahk_0_macro")
 else if (key = "1")
@@ -133,41 +134,41 @@ preset("ahk_F12_macro")
 
 ; Numpad Keys
 
-else if (key = "num0")
-preset("ahk_num0_macro")
-else if (key = "num1")
-preset("ahk_num1_macro")
-else if (key = "num2")
-preset("ahk_num2_macro")
-else if (key = "num3")
-preset("ahk_num3_macro")
-else if (key = "num4")
-preset("ahk_num4_macro")
-else if (key = "num5")
-preset("ahk_num5_macro")
-else if (key = "num6")
-preset("ahk_num6_macro")
-else if (key = "num7")
-preset("ahk_num7_macro")
-else if (key = "num8")
-preset("ahk_num8_macro")
-else if (key = "num9")
-preset("ahk_num9_macro")
+else if (key = "NumPad0")
+preset("ahk_NumPad0_macro")
+else if (key = "NumPad1")
+preset("ahk_NumPad1_macro")
+else if (key = "NumPad2")
+preset("ahk_NumPad2_macro")
+else if (key = "NumPad3")
+preset("ahk_NumPad3_macro")
+else if (key = "NumPad4")
+preset("ahk_NumPad4_macro")
+else if (key = "NumPad5")
+preset("ahk_NumPad5_macro")
+else if (key = "NumPad6")
+preset("ahk_NumPad6_macro")
+else if (key = "NumPad7")
+preset("ahk_NumPad7_macro")
+else if (key = "NumPad8")
+preset("ahk_NumPad8_macro")
+else if (key = "NumPad9")
+preset("ahk_NumPad9_macro")
 
-else if (key = "numAdd")
-preset("ahk_numAdd_macro")
-else if (key = "numSub")
-preset("ahk_numSub_macro")
-else if (key = "numMult")
-preset("ahk_numMult_macro")
-else if (key = "numDiv")
-preset("ahk_numDiv_macro")
-else if (key = "numDel")
-preset("ahk_numDel_macro")
-else if (key = "numDot") ; Alias of numDel, added to make my specific numpad work.
-preset("ahk_numDot_macro")
-else if (key = "numEnter")
-preset("ahk_numEnter_macro")
+else if (key = "NumPadAdd")
+preset("ahk_NumPadAdd_macro")
+else if (key = "NumPadSub")
+preset("ahk_NumPadSub_macro")
+else if (key = "NumPadMult")
+preset("ahk_NumPadMult_macro")
+else if (key = "NumPadDiv")
+preset("ahk_NumPadDiv_macro")
+else if (key = "NumPadDel")
+preset("ahk_NumPadDel_macro")
+else if (key = "NumPadDot") ; Alias of NumPadDel, added to make my specific numpad work.
+preset("ahk_NumPadDot_macro")
+; else if (key = "NumPadEnter")		NumPadEnter actually generates the same keycode as Enter (13). Use Enter for macro.
+; preset("ahk_NumPadEnter_macro")	Alternatively, it might be 176? Maybe? Check this!
 
 ; Miscellaneous Keys
 
@@ -483,71 +484,71 @@ else if (parameter = "ahk_F12_macro")
 		return
 	}
 
-else if (parameter = "ahk_num0_macro")
+else if (parameter = "ahk_NumPad0_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num1_macro")
+else if (parameter = "ahk_NumPad1_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num2_macro")
+else if (parameter = "ahk_NumPad2_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num3_macro")
+else if (parameter = "ahk_NumPad3_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num4_macro")
+else if (parameter = "ahk_NumPad4_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num5_macro")
+else if (parameter = "ahk_NumPad5_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num6_macro")
+else if (parameter = "ahk_NumPad6_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num7_macro")
+else if (parameter = "ahk_NumPad7_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num8_macro")
+else if (parameter = "ahk_NumPad8_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_num9_macro")
+else if (parameter = "ahk_NumPad9_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_numAdd_macro")
+else if (parameter = "ahk_NumPadAdd_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_numSub_macro")
+else if (parameter = "ahk_NumPadSub_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_numMult_macro")
+else if (parameter = "ahk_NumPadMult_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_numDiv_macro")
+else if (parameter = "ahk_NumPadDiv_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_numDel_macro")
+else if (parameter = "ahk_NumPadDel_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_numDot_macro")
+else if (parameter = "ahk_NumPadDot_macro")
 	{
 		return
 	}
-else if (parameter = "ahk_numEnter_macro")
+else if (parameter = "ahk_NumPadEnter_macro")
 	{
 		return
 	}
