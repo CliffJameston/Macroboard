@@ -39,7 +39,7 @@ A quickstart guide for using a second keyboard purely for macros on Windows.
 
 * [The Art of the Bodge](https://www.youtube.com/watch?v=lIFE7h3m40U) by Tom Scott
 
-*[TaranVH's Original GitHub Repo](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS)
+* [TaranVH's Original GitHub Repo](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS)
 
 * [LuaMacros](https://github.com/stevedonovan/LuaMacro)
 
