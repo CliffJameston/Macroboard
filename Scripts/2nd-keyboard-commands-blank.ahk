@@ -26,7 +26,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 #IfWinActive ;---- This will allow for everything below this line to work in ANY application.
 
 ~F24::
-FileRead, key, ; --> C:\PATH\TO\YOUR\keypressed.txt <-- EDIT THIS PATH TO WHERE keypressed.txt IS LOCATED
+FileRead, key, ; --> C:\PATH\TO\keypressed.txt <-- EDIT THIS PATH TO WHERE keypressed.txt IS LOCATED
 tippy(key) ; this function will just launch a quick tooltip that shows you what key you pressed. OPTIONAL.
 
 ; Alphanumeric Keys
