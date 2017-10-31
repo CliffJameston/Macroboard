@@ -18,7 +18,7 @@ A quickstart guide for using a second keyboard purely for macros on Windows.
 
 1. Ensure that both your keyboards are plugged in.
 2. Download and install [LuaMacros](http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794) and [AutoHotkey](https://autohotkey.com/).
-3. Download `2nd-keyboard-commands-blank.ahk`,  `send-keypresses-to-ahk.lua`, and `keypressed.txt` from this github repository, by clicking on the RAW button for each, and then selecting FILE > SAVE AS. Save them all into the same folder. OR just download the zip file and extract it. 
+3. Download `2nd-keyboard-commands-blank.ahk`,  `send-keypresses-to-ahk.lua`, and `keypressed.txt` from this GitHub repository, by clicking on the RAW button for each, and then selecting FILE > SAVE AS. Save them all into the same folder. OR just download the zip file and extract it. 
 4. Open `send-keypresses-to-ahk.lua` using LuaMacros.exe, which will allow you to view and modify the code. You'll need to change the file path of `keypressed.txt` at least.
 5. Click on the "play" arrow button. An identification window should pop up. Press any key on your 2nd keyboard, and LuaMacros will identify that device as your 2nd keyboard.
 6. Typing on your 2nd keyboard should no longer work, since LuaMacros is now intercepting and blocking those keystrokes.
