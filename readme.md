@@ -4,11 +4,11 @@ Adaptation of [TaranVH](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAM
 
 A lot of the code is reorganized and genericized, but *should* work the same as his.
 
-NOTE: CURRENTLY UNTESTED, will do that soon ish
+NOTE: CURRENTLY UNTESTED, will do that soonish
 
 Additional note: there are *two* .AHK script files in the "Scripts" folder. *Only one is needed*. Feel free to work off of `2nd-keyboard-commands-blank.ahk` and ignore `2nd-keyboard-commands-custom.ahk`.
 
-A quickstart guide for using a second keyboard purely for macros on Windows.
+A quick-start guide for using a second keyboard purely for macros on Windows.
 
 ---
 
@@ -45,3 +45,4 @@ A quickstart guide for using a second keyboard purely for macros on Windows.
 * [LuaMacros](https://github.com/stevedonovan/LuaMacro)
 
 * [AuthoHotkey](https://github.com/AutoHotkey/AutoHotkey)
+

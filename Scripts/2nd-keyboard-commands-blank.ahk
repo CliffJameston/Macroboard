@@ -27,232 +27,426 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 
 ~F24::
 FileRead, key, keypressed.txt ; <-- If you have this file located in a different folder from keypressed.txt, you'll need to include the actual path to keypressed.txt here.
-tippy(key) ; this function will just launch a quick tooltip that shows you what key you pressed. Optional, included for debugging.
+tippy(key) ; This function will just launch a quick tooltip that shows you what key you pressed. Optional, included for debugging.
 
 ; Alphanumeric Keys
 
 If (key = "a")
-preset("ahk_a_macro")
+{
+	; Code goes here
+}
 else if (key = "b")
-preset("ahk_b_macro")
+{
+	; Code goes here
+}
 else if (key = "c")
-preset("ahk_c_macro")
+{
+	; Code goes here
+}
 else if (key = "d")
-preset("ahk_d_macro")
+{
+	; Code goes here
+}
 else if (key = "e")
-preset("ahk_e_macro")
+{
+	; Code goes here
+}
 else if (key = "f")
-preset("ahk_f_macro")
+{
+	; Code goes here
+}
 else if (key = "g")
-preset("ahk_g_macro")
+{
+	; Code goes here
+}
 else if (key = "h")
-preset("ahk_h_macro")
+{
+	; Code goes here
+}
 else if (key = "i")
-preset("ahk_i_macro")
+{
+	; Code goes here
+}
 else if (key = "j")
-preset("ahk_j_macro")
+{
+	; Code goes here
+}
 else if (key = "k")
-preset("ahk_k_macro")
+{
+	; Code goes here
+}
 else if (key = "l")
-preset("ahk_l_macro")
+{
+	; Code goes here
+}
 else if (key = "m")
-preset("ahk_m_macro")
+{
+	; Code goes here
+}
 else if (key = "n")
-preset("ahk_n_macro")
+{
+	; Code goes here
+}
 else if (key = "o")
-preset("ahk_o_macro")
+{
+	; Code goes here
+}
 else if (key = "p")
-preset("ahk_p_macro")
+{
+	; Code goes here
+}
 else if (key = "q")
-preset("ahk_q_macro")
+{
+	; Code goes here
+}
 else if (key = "r")
-preset("ahk_r_macro")
+{
+	; Code goes here
+}
 else if (key = "s")
-preset("ahk_s_macro")
+{
+	; Code goes here
+}
 else if (key = "t")
-preset("ahk_t_macro")
+{
+	; Code goes here
+}
 else if (key = "u")
-preset("ahk_u_macro")
+{
+	; Code goes here
+}
 else if (key = "v")
-preset("ahk_v_macro")
+{
+	; Code goes here
+}
 else if (key = "w")
-preset("ahk_w_macro")
+{
+	; Code goes here
+}
 else if (key = "x")
-preset("ahk_x_macro")
+{
+	; Code goes here
+}
 else if (key = "y")
-preset("ahk_y_macro")
+{
+	; Code goes here
+}
 else if (key = "z")
-preset("ahk_z_macro")
+{
+	; Code goes here
+}
 
 else if (key = "0")
-preset("ahk_0_macro")
+{
+	; Code goes here
+}
 else if (key = "1")
-preset("ahk_1_macro")
+{
+	; Code goes here
+}
 else if (key = "2")
-preset("ahk_2_macro")
+{
+	; Code goes here
+}
 else if (key = "3")
-preset("ahk_3_macro")
+{
+	; Code goes here
+}
 else if (key = "4")
-preset("ahk_4_macro")
+{
+	; Code goes here
+}
 else if (key = "5")
-preset("ahk_5_macro")
+{
+	; Code goes here
+}
 else if (key = "6")
-preset("ahk_6_macro")
+{
+	; Code goes here
+}
 else if (key = "7")
-preset("ahk_7_macro")
+{
+	; Code goes here
+}
 else if (key = "8")
-preset("ahk_8_macro")
+{
+	; Code goes here
+}
 else if (key = "9")
-preset("ahk_9_macro")
+{
+	; Code goes here
+}
 
 ; Function Keys
 
 else if (key = "F1")
-preset("ahk_F1_macro")
+{
+	; Code goes here
+}
 else if (key = "F2")
-preset("ahk_F2_macro")
+{
+	; Code goes here
+}
 else if (key = "F3")
-preset("ahk_F3_macro")
+{
+	; Code goes here
+}
 else if (key = "F4")
-preset("ahk_F4_macro")
+{
+	; Code goes here
+}
 else if (key = "F5")
-preset("ahk_F5_macro")
+{
+	; Code goes here
+}
 else if (key = "F6")
-preset("ahk_F6_macro")
+{
+	; Code goes here
+}
 else if (key = "F7")
-preset("ahk_F7_macro")
+{
+	; Code goes here
+}
 else if (key = "F8")
-preset("ahk_F8_macro")
+{
+	; Code goes here
+}
 else if (key = "F9")
-preset("ahk_F9_macro")
+{
+	; Code goes here
+}
 else if (key = "F10")
-preset("ahk_F10_macro")
+{
+	; Code goes here
+}
 else if (key = "F11")
-preset("ahk_F11_macro")
+{
+	; Code goes here
+}
 else if (key = "F12")
-preset("ahk_F12_macro")
+{
+	; Code goes here
+}
 
 ; Numpad Keys
 
 else if (key = "NumPad0")
-preset("ahk_NumPad0_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad1")
-preset("ahk_NumPad1_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad2")
-preset("ahk_NumPad2_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad3")
-preset("ahk_NumPad3_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad4")
-preset("ahk_NumPad4_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad5")
-preset("ahk_NumPad5_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad6")
-preset("ahk_NumPad6_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad7")
-preset("ahk_NumPad7_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad8")
-preset("ahk_NumPad8_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPad9")
-preset("ahk_NumPad9_macro")
+{
+	; Code goes here
+}
 
 else if (key = "NumPadAdd")
-preset("ahk_NumPadAdd_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPadSub")
-preset("ahk_NumPadSub_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPadMult")
-preset("ahk_NumPadMult_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPadDiv")
-preset("ahk_NumPadDiv_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPadDel")
-preset("ahk_NumPadDel_macro")
+{
+	; Code goes here
+}
 else if (key = "NumPadDot") ; Alias of NumPadDel, added to make my specific numpad work.
-preset("ahk_NumPadDot_macro")
-; else if (key = "NumPadEnter")		NumPadEnter actually generates the same keycode as Enter (13). Use Enter for macro.
-; preset("ahk_NumPadEnter_macro")	Alternatively, it might be 176? Maybe? Check this!
+{
+	; Code goes here
+}
+; else if (key = "NumPadEnter")		NumPadEnter actually generates the same keycode as Enter (13). Use Enter for macro. Alternatively, it might be 176? Maybe? Check this!
+;{
+	; Code goes here
+;}
 
 ; Miscellaneous Keys
 
 else if (key = "`")
-preset("ahk_`_macro")
+{
+	; Code goes here
+}
 else if (key = "tab")
-preset("ahk_tab_macro")
+{
+	; Code goes here
+}
 
 else if (key = "minus")
-preset("ahk_minus_macro")
+{
+	; Code goes here
+}
 else if (key = "equals")
-preset("ahk_equals_macro")
+{
+	; Code goes here
+}
 
 else if (key = "leftbracket")
-preset("ahk_leftbracket_macro")
+{
+	; Code goes here
+}
 else if (key = "rightbracket")
-preset("ahk_rightbracket_macro")
+{
+	; Code goes here
+}
 else if (key = "backslash")
-preset("ahk_backslash_macro")
+{
+	; Code goes here
+}
 
 else if (key = "semicolon")
-preset("ahk_semicolon_macro")
+{
+	; Code goes here
+}
 else if (key = "singlequote")
-preset("ahk_singlequote_macro")
+{
+	; Code goes here
+}
 
 else if (key = "comma")
-preset("ahk_comma_macro")
+{
+	; Code goes here
+}
 else if (key = "period")
-preset("ahk_period_macro")
+{
+	; Code goes here
+}
 else if (key = "slash")
-preset("ahk_slash_macro")
+{
+	; Code goes here
+}
 
 
 else if (key = "insert")
-preset("ahk_insert_macro")
+{
+	; Code goes here
+}
 else if (key = "home")
-preset("ahk_home_macro")
+{
+	; Code goes here
+}
 else if (key = "pageup")
-preset("ahk_pageup_macro")
+{
+	; Code goes here
+}
 
 else if (key = "delete")
-preset("ahk_delete_macro")
+{
+	; Code goes here
+}
 else if (key = "end")
-preset("ahk_end_macro")
+{
+	; Code goes here
+}
 else if (key = "pagedown")
-preset("ahk_pagedown_macro")
+{
+	; Code goes here
+}
 
 else if (key = "up")
-preset("ahk_up_macro")
+{
+	; Code goes here
+}
 else if (key = "down")
-preset("ahk_down_macro")
+{
+	; Code goes here
+}
 else if (key = "left")
-preset("ahk_left_macro")
+{
+	; Code goes here
+}
 else if (key = "right")
-preset("ahk_right_macro")
+{
+	; Code goes here
+}
 
 else if (key = "space")
-preset("ahk_space_macro")
+{
+	; Code goes here
+}
 
 
 else if (key = "enter")
-preset("ahk_enter_macro")
+{
+	; Code goes here
+}
 
 ; Modifiers - Used as individual keypresses, not as modifiers, I think. Note to self: test some day.
 
 else if (key = "rShift")
-preset("ahk_rShift_macro")
+{
+	; Code goes here
+}
 else if (key = "lShift")
-preset("ahk_lShift_macro")
+{
+	; Code goes here
+}
 
 else if (key = "rCtrl")
-preset("ahk_rCtrl_macro")
+{
+	; Code goes here
+}
 else if (key = "lCtrl")
-preset("ahk_lCtrl_macro")
+{
+	; Code goes here
+}
 
 else if (key = "rAlt")
-preset("ahk_rAlt_macro")
+{
+	; Code goes here
+}
 else if (key = "lAlt")
-preset("ahk_lAlt_macro")
+{
+	; Code goes here
+}
 
 else if (key = "lWin")
-preset("ahk_lWin_macro")
+{
+	; Code goes here
+}
 else if (key = "rWin")
-preset("ahk_rWin_macro")
+{
+	; Code goes here
+}
 
 
 Return ;from luamacros F24
@@ -274,414 +468,3 @@ noTip:
 return
 
 ; /temporary tooltip maker
-
-;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-; ALL THE CODE BELOW CAN BE THE ACTUAL FUNCTIONS THAT YOU WANT TO CALL
-
-; Find the corresponding else if statement here to code for specific keypress.
-
-; Yes, it is possible to just write functions in the block of code above listing all the keys.
-; I separated them for clarity's sake, even though it does make the code significantly longer.
-
-; In the long term, it might be better to just live with the chaos and code in the initial list,
-; but for now, I'm gonna try and stick with this layout, performance willing.
-
-preset(parameter){
-If (parameter = "ahk_a_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_b_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_c_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_d_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_e_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_f_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_g_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_h_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_i_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_j_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_k_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_l_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_m_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_n_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_o_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_p_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_q_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_r_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_s_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_t_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_u_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_v_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_w_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_x_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_y_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_z_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_0_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_1_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_2_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_3_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_4_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_5_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_6_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_7_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_8_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_9_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_F1_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F2_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F3_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F4_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F5_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F6_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F7_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F8_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F9_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F10_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F11_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_F12_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_NumPad0_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad1_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad2_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad3_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad4_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad5_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad6_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad7_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad8_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPad9_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPadAdd_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPadSub_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPadMult_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPadDiv_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPadDel_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPadDot_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_NumPadEnter_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_`_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_tab_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_minus_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_equals_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_leftbracket_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_rightbracket_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_backslash_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_semicolon_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_singlequote_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_comma_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_period_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_slash_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_insert_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_home_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_pageup_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_delete_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_end_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_pagedown_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_up_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_down_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_left_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_right_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_space_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_enter_macro")
-	{
-		return
-	}
-
-else if (parameter = "ahk_rShift_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_lShift_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_rCtrl_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_lCtrl_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_rAlt_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_lAlt_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_lWin_macro")
-	{
-		return
-	}
-else if (parameter = "ahk_rWin_macro")
-	{
-		return
-	}
-}
