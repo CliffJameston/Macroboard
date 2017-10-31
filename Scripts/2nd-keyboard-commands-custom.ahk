@@ -26,7 +26,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 #IfWinActive ;---- This will allow for everything below this line to work in ANY application.
 
 ~F24::
-FileRead, key, ; E:\Users\Chris\Downloads\Macroboard\keypressed.txt ; <-- EDIT THIS PATH TO FIND keypressed.txt
+FileRead, key, keypressed.txt ; <-- EDIT THIS PATH TO FIND keypressed.txt
 tippy(key) ; this function will just launch a quick tooltip that shows you what key you pressed. Optional, included for debugging.
 
 ; Alphanumeric Keys
@@ -263,13 +263,13 @@ Return ;from luamacros F24
 
 ; temporary tooltip maker
 
-Tippy(tipsHere, wait:=333)
+Tippy(tipsHere, wait:=500)
 {
-ToolTip, %tipsHere% TP,,,8
-SetTimer, noTip, %wait% ; in 1/3 seconds by default, remove the tooltip
+ToolTip, %tipsHere%
+SetTimer, noTip, %wait% ; in 1/2 second by default, remove the tooltip
 }
 noTip:
-	ToolTip,,,,8
+	ToolTip
 	; removes the tooltip
 return
 
@@ -288,7 +288,6 @@ return
 ; but for now, I'm gonna try and stick with this layout, performance willing.
 
 preset(parameter){
-msgbox, you launched PRESET with the parameter %parameter%
 If (parameter = "ahk_a_macro")
 	{
 		return
