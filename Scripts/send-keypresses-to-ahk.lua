@@ -3,13 +3,15 @@
 -- Then, press any key on that keyboard to assign logical name ('MACROS') to macro keyboard
 -- When done this way, you have to reassign the name to your 2nd keyboard every time you open LUAmacros, using the play button located above.
 -- There may be a better, more permanent solution, but I don't know it.
+
 lmc_assign_keyboard('MACROS');
 
 sendToAHK = function (key)
       --print('It was assigned string:    ' .. key)
-      local file = io.open("C:\\PATH\\TO\\keypressed.txt", "w") -- writing this string to a text file on disk is probably NOT the best method. Feel free to program something better!
-      --Make sure to substitute the path that leads to your own "keypressed.txt" file, using the double backslashes.
-	  --print("we are inside the text file")
+      local file = io.open("E:\\Users\\Chris\\Documents\\Git Repositories\\Macroboard\\Scripts\\keypressed.txt", "w")
+      -- Writing this string to a text file on disk is probably NOT the best method. Feel free to program something better!
+      -- Make sure to substitute the path that leads to your own "keypressed.txt" file, using the double backslashes.
+	  -- print("we are inside the text file")
       file:write(key)
       file:flush() --"flush" means "save"
       file:close()
@@ -92,11 +94,11 @@ local config = {
 	[109] = "NumPadSub",
     [110] = "NumPadDel",
 	[111] = "NumPadDiv",
-    [144] = "NumLock",	--probably it is best to avoid this key. I keep numlock ON, or it has unexpected effects
+    [144] = "NumLock",	--probably it is best to avoid this key. I keep NumLock ON, or it has unexpected effects
 
     -- Miscellaneous Keys
 
-    [192] = "`",	--this is the tilde key just before the number row
+    [192] = "`",	--this is the tilde key, on the left side of the number row
     [9]   = "tab",
 
 	[189] = "minus",
