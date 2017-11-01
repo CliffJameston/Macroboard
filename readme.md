@@ -1,4 +1,4 @@
-# 2nd-keyboard
+# 2nd-Keyboard
 
 Adaptation of [TaranVH](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS)'s original LuaMacros code, since I don't want to use Intercept.
 
@@ -16,7 +16,7 @@ A quick-start guide for using a second keyboard purely for macros on Windows.
 
 [Watch the video](https://youtu.be/Arn8ExQ2Gjg?t=362) first, then take a look at the instructions below.
 
-(These instructions are essentially the ones written by Taran. If they need to be clarified, just let me know, or submit a pull request!)
+(These instructions are mostly the same ones written by Taran. If they need to be clarified, just let me know, or submit a pull request!)
 
 1. Ensure that both your keyboards are plugged in.
 2. Download and install [LuaMacros](http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794) and [AutoHotkey](https://autohotkey.com/).
