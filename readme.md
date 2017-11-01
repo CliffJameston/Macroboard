@@ -4,7 +4,7 @@ Adaptation of [TaranVH](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAM
 
 A lot of the code is reorganized and genericized, but *should* work the same as his.
 
-NOTE: CURRENTLY UNTESTED, will do that soonish
+NOTE: I am currently using this myself, however I'm only using a keypad, and can't check most of the keyboard. The keypad works great, though!
 
 Additional note: there are *two* .AHK script files in the "Scripts" folder. *Only one is needed*. Feel free to work off of `2nd-keyboard-commands-blank.ahk` and ignore `2nd-keyboard-commands-custom.ahk`.
 
@@ -21,13 +21,13 @@ A quick-start guide for using a second keyboard purely for macros on Windows.
 1. Ensure that both your keyboards are plugged in.
 2. Download and install [LuaMacros](http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794) and [AutoHotkey](https://autohotkey.com/).
 3. Download this project and extract it. 
-..* If for some reason you can't, download `2nd-keyboard-commands-blank.ahk`,  `send-keypresses-to-ahk.lua`, and `keypressed.txt` from this GitHub repository, by clicking on the RAW button for each, and then selecting FILE > SAVE AS. Save them all *into the same folder*.
+  * If for some reason you can't, download `2nd-keyboard-commands-blank.ahk`,  `send-keypresses-to-ahk.lua`, and `keypressed.txt` from this GitHub repository, by clicking on the RAW button for each, and then selecting FILE > SAVE AS. Save them all *into the same folder*.
 4. Open `send-keypresses-to-ahk.lua` using LuaMacros.exe, which will allow you to view and modify the code. You'll need to change the file path of `keypressed.txt` at least.
 5. Click on the "play" arrow button. An identification window should pop up. Press any key on your 2nd keyboard, and LuaMacros will identify that device as your 2nd keyboard.
 6. Typing on your 2nd keyboard should no longer work, since LuaMacros is now intercepting and blocking those keystrokes.
 7. Press the spacebar on your second keyboard, then check `keypressed.txt` to see if it now contains the string "space". If so, you got it working!
 8. Run `2nd-keyboard-commands-blank.ahk` and you should be good to go!
-..* `2nd-keyboard-commands-blank.ahk` has no functions initially. You can write your own or copy/paste some from my `2nd-keyboard-commands-custom.ahk`, but you'll probably need to modify them to fit your own system and needs.
+  * `2nd-keyboard-commands-blank.ahk` has no functions initially. You can write your own or copy/paste some from my `2nd-keyboard-commands-custom.ahk`, but you'll probably need to modify them to fit your own system and needs.
 
 
 ### Don't Panic!
