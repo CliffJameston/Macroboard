@@ -1,1 +1,1 @@
-NumPad5
+NumPadDel

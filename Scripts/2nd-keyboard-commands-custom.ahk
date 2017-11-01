@@ -12,9 +12,9 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ; Author: Taran Van Hemert
 
-; HELLO, poeple who want info about making a second keyboard, using LUAmacros!
+; HELLO, people who want info about making a second keyboard, using LUAmacros!
 
-; Here's my LTT video about how I use the 2nd keyboard with Luamacros: https://www.youtube.com/watch?v=Arn8ExQ2Gjg
+; Here's my LTT video about how I use the 2nd keyboard with LuaMacros: https://www.youtube.com/watch?v=Arn8ExQ2Gjg
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,10 +26,12 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 #IfWinActive ;---- This will allow for everything below this line to work in ANY application.
 
 ~F24::
-FileRead, key, keypressed.txt ; <-- EDIT THIS PATH TO FIND keypressed.txt
+FileRead, key, keypressed.txt ; <-- If you have this file located in a different folder from keypressed.txt, you'll need to include the actual path to keypressed.txt here.
 ; tippy(key) ; This function will just launch a quick tooltip that shows you what key you pressed. Optional, included for debugging.
 
-; Alphanumeric Keys
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;~~~~~~~~~~             Alphanumeric Keys             ~~~~~~~~~~
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If (key = "a")
 {
@@ -177,7 +179,9 @@ else if (key = "9")
 	; Code goes here
 }
 
-; Function Keys
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;~~~~~~~~~~               Function Keys               ~~~~~~~~~~
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 else if (key = "F1")
 {
@@ -228,7 +232,9 @@ else if (key = "F12")
 	; Code goes here
 }
 
-; Numpad Keys
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;~~~~~~~~~~                Numpad Keys                ~~~~~~~~~~
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 else if (key = "NumPad0")
 {
@@ -253,7 +259,9 @@ else if (key = "NumPad4")
 }
 else if (key = "NumPad5")
 {
-	; Code goes here
+	SendInput, ^v
+	SendInput, {Down}
+	SendInput, ^v
 }
 else if (key = "NumPad6")
 {
@@ -292,16 +300,18 @@ else if (key = "NumPadDel")
 {
 	; Code goes here
 }
-else if (key = "NumPadDot") ; Alias of NumPadDel, added to make my specific numpad work.
+else if (key = "NumPadDot") 	; Alias of NumPadDel, added to make my specific numpad work.
 {
 	; Code goes here
 }
-; else if (key = "NumPadEnter")		NumPadEnter actually generates the same keycode as Enter (13). Use Enter for macro.Alternatively, it might be 176? Maybe? Check this!
-;{
+else if (key = "NumPadEnter")	; NumPadEnter actually generates the same keycode as Enter (13). Use Enter for macro.Alternatively, it might be 176? Maybe? Check this!
+{
 	; Code goes here
-;}
+}
 
-; Miscellaneous Keys
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;~~~~~~~~~~            Miscellaneous Keys             ~~~~~~~~~~
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 else if (key = "`")
 {
@@ -409,7 +419,11 @@ else if (key = "enter")
 	; Code goes here
 }
 
-; Modifiers - Used as individual keypresses, not as modifiers, I think. Note to self: test some day.
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;~~~~~~~~~~                 Modifiers                 ~~~~~~~~~~
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+; Used as individual keypresses, not as modifiers, I think. Note to self: test some day.
 
 else if (key = "rShift")
 {
@@ -447,14 +461,13 @@ else if (key = "rWin")
 	; Code goes here
 }
 
+Return ;from LuaMacros F24
 
-Return ;from luamacros F24
+; THE BLOCK OF CODE ABOVE is the original, simple LuaMacros-dependent script.
 
-; THE BLOCK OF CODE ABOVE is the original, simple Luamacros-dependant script.
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-;-----
-
-; temporary tooltip maker
+; Temporary Tooltips
 
 Tippy(tipsHere, wait:=500)
 {
@@ -465,5 +478,3 @@ noTip:
 	ToolTip
 	; removes the tooltip
 return
-
-; /temporary tooltip maker
