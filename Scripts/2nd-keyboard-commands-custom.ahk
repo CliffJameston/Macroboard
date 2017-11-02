@@ -7,7 +7,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 #MaxHotkeysPerInterval 2000
 #WinActivateForce ;https://autohotkey.com/docs/commands/_WinActivateForce.htm
 
-; ASSUME THIS IS BETA CODE
+; This all *should* work.
 
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ; Author: Taran Van Hemert
@@ -238,8 +238,7 @@ else if (key = "F12")
 
 else if (key = "NumPad0")
 {
-	;FormatTime, CurrentDateTime,, yyyy-MM-dd
-	;SendInput %CurrentDateTime%
+	SendInput, {Enter}/sit4{Enter}
 }
 else if (key = "NumPad1")
 {
@@ -259,9 +258,24 @@ else if (key = "NumPad4")
 }
 else if (key = "NumPad5")
 {
-	SendInput, ^v
-	SendInput, {Down}
-	SendInput, ^v
+	FormatTime, localTime,, yyyy-MM-dd
+	InputBox, titleVar, Article Title, Enter the title of the article. 
+	StringLower, saveTitleVar, titleVar
+	StringReplace, saveTitleVar, saveTitleVar, %A_Space%, -, 1
+	saveTitleVar := localTime . "-" . saveTitleVar . ".md"
+	; Print info to file
+	SendInput ` 
+	(
+---
+title: "%titleVar%"
+date: "%localTime%"
+---
+
+
+	)
+	; Open save dialog with generated name
+	SendInput, ^S
+	SendInput, %saveTitleVar%
 }
 else if (key = "NumPad6")
 {
@@ -277,7 +291,7 @@ else if (key = "NumPad8")
 }
 else if (key = "NumPad9")
 {
-	; Code goes here
+	SendInput, {Enter}/leanbackcoin{Enter}
 }
 
 else if (key = "NumPadAdd")
@@ -286,7 +300,7 @@ else if (key = "NumPadAdd")
 }
 else if (key = "NumPadSub")
 {
-	; Code goes here
+	Reload
 }
 else if (key = "NumPadMult")
 {
